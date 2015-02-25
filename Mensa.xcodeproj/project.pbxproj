@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		451BA72F1A9D5F610036074F /* Mensa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451BA7181A9D5F610036074F /* Mensa.framework */; };
-		451BA7311A9D5F610036074F /* Mensa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 451BA7181A9D5F610036074F /* Mensa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		451BA7381A9D5F920036074F /* MNSCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 458920961885B06F001EC015 /* MNSCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		451BA7391A9D5F920036074F /* MNSDataMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4589208F18848D19001EC015 /* MNSDataMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		451BA73A1A9D5F920036074F /* MNSHostedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F7404A1852B3AF00478D29 /* MNSHostedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -86,7 +84,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				451BA7311A9D5F610036074F /* Mensa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,7 +168,6 @@
 				454F2FE217A3113800DF45AB /* CoreGraphics.framework in Frameworks */,
 				454F2FE417A3113800DF45AB /* UIKit.framework in Frameworks */,
 				454F2FE017A3113800DF45AB /* Foundation.framework in Frameworks */,
-				451BA72F1A9D5F610036074F /* Mensa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,7 +637,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Example-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Mensa;
 				WRAPPER_EXTENSION = app;
@@ -656,7 +652,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Example/Example-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Mensa;
 				WRAPPER_EXTENSION = app;
