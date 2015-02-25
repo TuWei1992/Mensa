@@ -43,8 +43,8 @@
 
 + (void)adjustLayoutConstraintsForCell:(UIView<MNSHostingCell> *)cell contentView:(UIView *)contentView
 {
-    [self _adjustConstraintsForCell:cell toPriority:UILayoutPriorityDefaultHigh];
-    [self _addEqualityConstraintsToCell:cell contentView:contentView];
+//    [self _adjustConstraintsForCell:cell toPriority:UILayoutPriorityDefaultHigh];
+//    [self _addEqualityConstraintsToCell:cell contentView:contentView];
 }
 
 + (void)_adjustConstraintsForCell:(UIView<MNSHostingCell> *)cell toPriority:(UILayoutPriority)priority
