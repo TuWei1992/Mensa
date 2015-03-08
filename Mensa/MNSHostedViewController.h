@@ -16,6 +16,7 @@
 - (void)setViewHighlighted:(BOOL)highlighted forObject:(id)object;
 - (UIView *)viewForObject:(id)object __attribute__((objc_requires_super));
 
++ (NSString *)identifier;
 + (NSArray *)reuseIdentifiers;
 + (NSString *)reuseIdentifierForObject:(id)object;
 

@@ -36,14 +36,19 @@
     return self.view;
 }
 
++ (NSString *)identifier
+{
+    return [NSStringFromClass(self) componentsSeparatedByString:@"."].lastObject;
+}
+
 + (NSArray *)reuseIdentifiers
 {
-    return @[NSStringFromClass(self)];
+    return @[[self identifier]];
 }
 
 + (NSString *)reuseIdentifierForObject:(id)object
 {
-    return NSStringFromClass(self);
+    return [self identifier];
 }
 
 @end

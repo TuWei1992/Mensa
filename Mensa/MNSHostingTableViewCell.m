@@ -28,7 +28,8 @@
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
 		Class class = self.hostedViewControllerClass;
-		_hostedViewController = [[class alloc] initWithNibName:NSStringFromClass(class) bundle:nil];
+        NSString *nibName = [class identifier];
+		_hostedViewController = [[class alloc] initWithNibName:nibName bundle:nil];
 
         self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     }
@@ -39,7 +40,7 @@
 
 + (Class)subclassWithViewControllerClass:(Class)viewControllerClass
 {
-	NSString *className = [NSString stringWithFormat:@"%@_%@", NSStringFromClass(self), NSStringFromClass(viewControllerClass)];
+	NSString *className = [NSString stringWithFormat:@"%@_%@", NSStringFromClass(self), [viewControllerClass identifier]];
     Class class = NSClassFromString(className);
     if (!class) {
         class = objc_allocateClassPair(self, [className UTF8String], 0);
