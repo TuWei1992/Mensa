@@ -11,7 +11,7 @@
 #import "MNSHostedViewController.h"
 #import "MNSHostingCollectionViewCell.h"
 #import "MNSSection.h"
-#import "MNSViewControllerRegistrar.h"
+#import "MNSViewControllerRegistry.h"
 
 @interface MNSCollectionViewController : UICollectionViewController <MNSDataMediatorDelegate>
 

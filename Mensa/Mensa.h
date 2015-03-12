@@ -27,5 +27,5 @@ FOUNDATION_EXPORT const unsigned char MensaVersionString[];
 #import <Mensa/MNSPropertyViewController.h>
 #import <Mensa/MNSSection.h>
 #import <Mensa/MNSTableViewController.h>
-#import <Mensa/MNSViewControllerRegistrar.h>
+#import <Mensa/MNSViewControllerRegistry.h>
 #import <Mensa/MNSViewHosting.h>

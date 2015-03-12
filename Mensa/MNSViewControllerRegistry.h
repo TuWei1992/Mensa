@@ -1,5 +1,5 @@
 //
-//  MNSViewControllerRegistrar.h
+//  MNSViewControllerRegistry.h
 //  Mensa
 //
 //  Created by Jordan Kay on 12/6/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MNSViewControllerRegistrar : NSObject
+@interface MNSViewControllerRegistry : NSObject
 
 + (void)registerViewControllerClass:(Class)viewControllerClass forModelClass:(Class)modelClass;
 + (Class)viewControllerClassForModelClass:(Class)modelClass;

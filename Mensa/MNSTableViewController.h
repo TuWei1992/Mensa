@@ -11,7 +11,7 @@
 #import "MNSSection.h"
 #import "MNSHostedViewController.h"
 #import "MNSHostingTableViewCell.h"
-#import "MNSViewControllerRegistrar.h"
+#import "MNSViewControllerRegistry.h"
 
 @interface MNSTableViewController : UITableViewController <MNSDataMediatorDelegate>
 

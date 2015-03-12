@@ -9,7 +9,7 @@
 #import "MNSDataMediator.h"
 #import "MNSHostedViewController.h"
 #import "MNSViewHosting.h"
-#import "MNSViewControllerRegistrar.h"
+#import "MNSViewControllerRegistry.h"
 #import "MNSSection.h"
 
 @interface MNSDataMediator ()
@@ -119,7 +119,7 @@
     Class modelClass = [object class];
 
     // MNSHostingTableViewCell dynamically generates a subclass of itself that automatically hosts a view controller of a specific class.
-    Class viewControllerClass = [MNSViewControllerRegistrar viewControllerClassForModelClass:modelClass];
+    Class viewControllerClass = [MNSViewControllerRegistry viewControllerClassForModelClass:modelClass];
     if (viewControllerClass) {
         Class cellClass = [[self.delegate cellClass:self] subclassWithViewControllerClass:viewControllerClass];
         NSArray *reuseIdentifiers = [viewControllerClass reuseIdentifiers];

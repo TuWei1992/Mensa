@@ -1,16 +1,16 @@
 //
-//  MNSViewControllerRegistrar.m
+//  MNSViewControllerRegistry.m
 //  Mensa
 //
 //  Created by Jordan Kay on 12/6/13.
 //  Copyright (c) 2013 Jordan Kay. All rights reserved.
 //
 
-#import "MNSViewControllerRegistrar.h"
+#import "MNSViewControllerRegistry.h"
 
 static NSMutableDictionary *registeredViewControllerClasses;
 
-@implementation MNSViewControllerRegistrar
+@implementation MNSViewControllerRegistry
 
 + (void)registerViewControllerClass:(Class)viewControllerClass forModelClass:(Class)modelClass
 {
@@ -26,7 +26,7 @@ static NSMutableDictionary *registeredViewControllerClasses;
 
 + (void)initialize
 {
-    if (self == [MNSViewControllerRegistrar class]) {
+    if (self == [MNSViewControllerRegistry class]) {
         registeredViewControllerClasses = [NSMutableDictionary dictionary];
     }
 }

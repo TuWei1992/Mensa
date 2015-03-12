@@ -42,8 +42,8 @@ static const CGFloat kMaxFontSize = 105.0f;
 + (void)initialize
 {
     if (self == [MNSNumberTableViewController class]) {
-        [MNSViewControllerRegistrar registerViewControllerClass:[MNSNumberViewController class] forModelClass:[MNSNumber class]];
-        [MNSViewControllerRegistrar registerViewControllerClass:[MNSPrimeFlagViewController class] forModelClass:[MNSPrimeFlag class]];
+        [MNSViewControllerRegistry registerViewControllerClass:[MNSNumberViewController class] forModelClass:[MNSNumber class]];
+        [MNSViewControllerRegistry registerViewControllerClass:[MNSPrimeFlagViewController class] forModelClass:[MNSPrimeFlag class]];
     }
 }
 

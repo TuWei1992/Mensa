@@ -119,7 +119,7 @@ static NSString *cellIdentifier = @"MNSTableViewCell";
 {
     MNSHostingTableViewCell *cell;
     id object = [self.dataMediator backingObjectForRowAtIndexPath:indexPath];
-    Class viewControllerClass = [MNSViewControllerRegistrar viewControllerClassForModelClass:[object class]];
+    Class viewControllerClass = [MNSViewControllerRegistry viewControllerClassForModelClass:[object class]];
 
     if (viewControllerClass) {
         NSString *reuseIdentifier = [viewControllerClass reuseIdentifierForObject:object];
